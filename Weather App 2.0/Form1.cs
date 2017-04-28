@@ -38,121 +38,24 @@ namespace Weather_App_2._0
             iconNumber = Convert.ToInt16(d.icon);
             #region Icon Codes
 
-            if (iconNumber >= 200 && iconNumber < 700)
+            if (iconNumber >= 200 && iconNumber < 300)
             {
                 conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
             }
-            switch (iconNumber)
+
+            else if (iconNumber >= 300 && iconNumber < 500)
             {
-                //Thunder Storm
-                case 200:
-                    // conditionPicturebox.BackgroundImage = 
-                    break;
-                case 201:
-                    //  conditionPicturebox.BackgroundImage = Form1.;
-                    break;
-                case 202:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 210:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 211:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 212:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 221:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 230:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 231:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
-                case 232:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_3;
-                    break;
+                conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
+            }
 
-                //Rain
-                case 300:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 301:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 302:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 310:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 311:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 312:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 313:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 314:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 321:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 500:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 501:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 502:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 503:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 504:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 511:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 520:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 521:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 522:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
-                case 531:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.Icon_1;
-                    break;
+            else if (iconNumber == 800)
+            {
+                conditionPicturebox.BackgroundImage = Properties.Resources.icon_2;
+            }
 
-                //Clear
-                case 800:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_2;
-                    break;
-
-                //Clouds
-                case 801:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_4;
-                    break;
-                case 802:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_4;
-                    break;
-                case 803:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_4;
-                    break;
-                case 804:
-                    conditionPicturebox.BackgroundImage = Properties.Resources.icon_4;
-                    break;
+            else if (iconNumber >= 801 && iconNumber < 805)
+            {
+                conditionPicturebox.BackgroundImage = Properties.Resources.icon_4;
             }
             #endregion
         }
