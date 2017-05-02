@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Current.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Current.Designer.cs">
+      <DependentUpon>Current.cs</DependentUpon>
+    </Compile>
     <Compile Include="Day.cs" />
     <Compile Include="Forecast.cs">
       <SubType>UserControl</SubType>
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Current.resx">
+      <DependentUpon>Current.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forecast.resx">
+      <DependentUpon>Forecast.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
